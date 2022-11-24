@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import {logDOM} from "@testing-library/react";
 
 const useGetData = (url) => {
     const [data, setData] = useState([]);
@@ -7,6 +8,7 @@ const useGetData = (url) => {
         fetch(url)
             .then((res) => res.json())
             .then(json => setData(json))
+            .catch(error => console.log(error))
     }, [url])
 
     return data

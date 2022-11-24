@@ -14,17 +14,15 @@ const Users = () => {
                 <h1>Users</h1>
             </div>
             <nav>
-                <Link to="/">Home</Link>
+                <Link to="/">Back to home</Link>
             </nav>
             <div className="container">
-            {users.map(({id, name, email, address: {city}, phone}) => (
+            {users.map(({id, name, username}) => (
                 <div className = 'card elem' key={id}>
                     <div className = 'box'>
                         <div className = 'content'>
                             <h3>{name}</h3>
-                            <p>Email: {email}</p>
-                            <p>Address: {city}</p>
-                            <p>Phone: {phone}</p>
+                            <p>Username: {username}</p>
                             <Link to={`/users/${id}`} key={id}>Details</Link>
                         </div>
                     </div>

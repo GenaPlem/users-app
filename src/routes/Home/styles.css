@@ -7,13 +7,13 @@
 }
 
 body {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
     background: #232427;
+    color: white;
 }
 
 body .container {
@@ -22,5 +22,13 @@ body .container {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 40px 0;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+nav {
+    margin: 10px;
 }
