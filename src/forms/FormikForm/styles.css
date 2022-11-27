@@ -1,0 +1,37 @@
+.form  {
+    max-width: 420px;
+    margin: 40px 0;
+    background-color: #474747;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+form input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#submit {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: inherit;
+    cursor: pointer;
+    user-select: none;
+}
+
+#submit:hover {
+    border-width: 3px;
+}
+
+textarea {
+    width: 360px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+    display: block;
+}
